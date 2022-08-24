@@ -1,0 +1,127 @@
+.footer{
+    background-color: #000;
+    color: #fff;
+}
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 80px 187px 24px 40px;
+}
+/* .footer__wrapper div{
+    border: 1px solid #fff;
+} */
+.footer__title{
+    width: 328px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.footer__heading{
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 172.69%;
+    letter-spacing: 0.205em;
+    text-transform: uppercase;
+    margin: 0;
+}
+.footer__description{
+    width: 315px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 159.5%;
+    margin: 19px 0 16px 0;
+}
+.footer__input--wrapper{
+    width: 328px;
+    height: 58px;
+    display: flex;
+    border: 1px solid white;
+    opacity: 0.2;
+    align-items: center;
+}
+.footer__input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 159.5%;
+}
+.footer__input::placeholder{
+    padding-left: 16px;
+    color: #fff;
+}
+.footer__right--icon{
+    margin-right: 29px;
+}
+.footer__icons{
+    display: flex;
+    margin: 16px 0 0 0;
+    align-items: center;
+}
+.footer__icon{
+    margin-right: 16px;
+}
+.footer__list{
+    margin: 20px 0 0 0;
+}
+.footer__link{
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 159.5%;
+}
+.footer__item{
+    margin-bottom: 8px;
+}
+.footer__copyright{
+    margin: 0 0 0 40px;
+    padding: 0 0 24px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 159.5%;
+    opacity: 0.3;
+}
+
+
+@media (max-width: 1000px){
+    .footer__wrapper{
+        padding: 80px 40px 24px 40px;
+    }
+}
+
+@media (max-width: 600px){
+    .footer__wrapper{
+        padding: 40px 16px;
+        justify-content:flex-start;
+    }
+    .footer__heading{
+        padding: 27px 0 19px 0;
+    }
+    .footer__title{
+        width: auto;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .footer__input--wrapper{
+        width: 90vw;
+        max-width: 100%;
+    }
+    .footer__third--div{
+        margin-right: 40px;
+    }
+    .footer__copyright{
+        text-align: center;
+        margin: 0;
+    }
+    .footer__description{
+        margin: 0 0 16px 0;
+    }
+}
