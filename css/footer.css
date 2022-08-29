@@ -123,5 +123,6 @@
     }
     .footer__description{
         margin: 0 0 16px 0;
+        width: auto;
     }
 }

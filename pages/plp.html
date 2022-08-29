@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/plp.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <script src="../js/shop.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <ul class="header__list">
+                <li class="header__item">
+                    <div class="header__input--wrapper">
+                        <input type="text" placeholder="search" class="header__input">
+                        <img class="header__search" src="../media/Images/SVG/search.svg" alt="search">
+                    </div>
+                    <img class="header__menu--button" src="../media/Images/SVG/menu.svg" alt="menu">
+                </li>
+                <li class="header__item">
+                    <a class="header__logo" href="../index.html"><img class="header__logo--image" src="../media/Images/SVG/tomor.svg" alt="tomor"></a>
+                </li>
+                <li class="header__item">
+                    <ul class="header__icons">
+                        <li class="header__icon">
+                            <a class="header__icon--link" href="#">
+                                <img class="header__icon--image header__hidden" src="../media/Images/SVG/profile.svg" alt="profile">
+                            </a>
+                        </li>
+                        <li class="header__icon">
+                            <a class="header__icon--link" href="#">
+                                <img class="header__icon--image header__hidden" src="../media/Images/SVG/heart.svg" alt="heart">
+                            </a>
+                        </li>
+                        <li class="header__icon">
+                            <a class="header__icon--link" href="#">
+                                <img class="header__icon--image" src="../media/Images/SVG/cart.svg" alt="cart">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">New</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Designers</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Clothes</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Shoes</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Accessories</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Bags</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Jewlery</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Beauty</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Editorial</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Sale</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="banner__container">
+          <h1 class="banner__title">Gucci</h1>
+          <div class="banner__description">
+            <p class="banner__text">
+              Under the new vision of creative director Alessandro Michele, the
+              House has redefined luxury for the 21st century, further reinforcing
+              its position as one of the world’s most desirable fashion houses.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="container shop__container">
+        <div class="categories">
+            <div class="category">
+              <img
+                class="category__image"
+                src="../media/Images/SVG/animal.svg"
+                alt=""
+              />
+              <p class="category__name">People</p>
+            </div>
+            <div class="category">
+              <img
+                class="category__image"
+                src="../media/Images/SVG/environment.svg"
+                alt=""
+              />
+              <p class="category__name">Environment</p>
+            </div>
+            <div class="category">
+              <img
+                class="category__image"
+                src="../media/Images/SVG/people.svg"
+                alt=""
+              />
+              <p class="category__name">Animal</p>
+            </div>
+          </div>
+
+          <div class="filter__sort">
+            <div class="filter">
+              <img src="../media/Images/SVG/minus.svg" alt="" />
+              <a class="filter__link" href="#">Filter</a>
+            </div>
+            <div class="sort">
+              <img src="../media/Images/SVG/plus.svg" alt="" />
+              <a class="sort__link" href="#">Sort</a>
+            </div>
+          </div>
+      </section>
+
+      <main class="products__list">
+        <div class="accordion__div">
+            <button class="accordion">Categories</button>
+            <div class="panel">
+                <ul class="accordion__list">
+                    <li class="accordion__item">New</li>
+                    <li class="accordion__item">Clothes</li>
+                    <li class="accordion__item">Shoes</li>
+                    <li class="accordion__item">Accessories</li>
+                    <li class="accordion__item">Bags</li>
+                    <li class="accordion__item">Jewlery</li>
+                    <li class="accordion__item">Beauty</li>
+                    <li class="accordion__item">Sale</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Color</button>
+            <div class="panel">
+                <ul class="accordion__list">
+                    <li class="accordion__item">Red</li>
+                    <li class="accordion__item">Blue</li>
+                    <li class="accordion__item">White</li>
+                    <li class="accordion__item">Yellow</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Size</button>
+            <div class="panel">
+                <ul class="accordion__list">
+                    <li class="accordion__item">L</li>
+                    <li class="accordion__item">M</li>
+                    <li class="accordion__item">S</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Designer</button>
+            <div class="panel">
+                <ul class="accordion__list">
+                    <li class="accordion__item">Design</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Sustainable Brands</button>
+            <div class="panel">
+                <ul class="accordion__list">
+                    <li class="accordion__item">Brands</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Sustainability</button>
+            <div class="panel">
+                <ul class="accordion__list">
+                    <li class="accordion__item">Sustainable</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Price</button>
+            <div class="panel">
+                <ul class="accordion__list">
+                    <li class="accordion__item">Cheap</li>
+                    <li class="accordion__item">Expensive</li>
+                </ul>
+            </div>
+        </div>
+		<div>
+            <div class="list" id="list"></div>
+		    <div class="pagenumbers" id="pagination"></div>
+        </div>
+	</main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div>
+                    <h3 class="footer__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                </div>
+                <div>
+                    <p class="footer__heading">Sign up for toward updates</p>
+                    <p class="footer__description">Receiving our newsletter with access to our latest collections, events and news.</p>
+                    <div class="footer__input--wrapper">
+                        <input class="footer__input" type="text" placeholder="Email Address">
+                        <img class="footer__right--icon" src="../media/Images/SVG/white-toRight.svg" alt="toRight">
+                    </div>
+                    <ul class="footer__icons">
+                        <li class="footer__icon">
+                            <img src="../media/Images/SVG/instagram.svg" alt="">
+                        </li>
+                        <li class="footer__icon">
+                            <img src="../media/Images/SVG/facebook.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__third--div">
+                    <h4 class="footer__heading">customer care</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">FAQ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Shipping & Returns</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">company</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">About Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Journal</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Press</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer__copyright">© 2021 Toward Brand</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

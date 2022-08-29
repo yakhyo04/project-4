@@ -1,27 +1,8 @@
-new Swiper(".bar", {
-    slidesPerView: 0,
-    spaceBetween: 0,
-    centeredSlides: true,
-    loop: true,
-    autoplay:{
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 0,
-      },
-      1024: {
-        slidesPerView: 6,
-        spaceBetween: 0
-      }
-    }
-  });
 
   new Swiper(".product-swiper", {
     slidesPerView: 0,
     spaceBetween: 0,
+    loop: true,
     navigation: {
       nextEl: '.product__right--button',
       prevEl: '.product__left--button',
@@ -44,11 +25,11 @@ new Swiper(".bar", {
 
 
   new Swiper(".shop-swiper", {
-    slidesPerView: 0,
+    slidesPerView: 2,
     spaceBetween: 0,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.shop__right--btn2',
+      prevEl: '.shop__left--btn2',
     },
     breakpoints: {
       500:{
@@ -66,6 +47,33 @@ new Swiper(".bar", {
       1024: {
         slidesPerView: 4,
         spaceBetween: 0
+      }
+    }
+  });
+
+  new Swiper(".designerSwiper", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    // navigation: {
+    //   nextEl: '.shop__right--btn2',
+    //   prevEl: '.shop__left--btn2',
+    // },
+    breakpoints: {
+      500:{
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      980: {
+        slidesPerView: 3,
+        spaceBetween: 16
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 16
       }
     }
   });
@@ -96,4 +104,18 @@ new Swiper(".bar", {
         spaceBetween: 0
       }
     }
+  });
+
+
+  var swiperClassic = new Swiper(".swiperClassic", {
+    loop: true,
+    navigation: {
+      nextEl: ".classic__next-arr ",
+      prevEl: ".classic__prev-arr ",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: "auto",
+      },
+    },
   });

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cart.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <ul class="header__list">
+                <li class="header__item">
+                    <div class="header__input--wrapper">
+                        <input type="text" placeholder="search" class="header__input">
+                        <img class="header__search" src="../media/Images/SVG/search.svg" alt="search">
+                    </div>
+                    <img class="header__menu--button" src="../media/Images/SVG/menu.svg" alt="menu">
+                </li>
+                <li class="header__item">
+                    <a class="header__logo" href="../index.html"><img class="header__logo--image" src="../media/Images/SVG/tomor.svg" alt="tomor"></a>
+                </li>
+                <li class="header__item">
+                    <ul class="header__icons">
+                        <li class="header__icon">
+                            <a class="header__icon--link" href="#">
+                                <img class="header__icon--image header__hidden" src="../media/Images/SVG/profile.svg" alt="profile">
+                            </a>
+                        </li>
+                        <li class="header__icon">
+                            <a class="header__icon--link" href="#">
+                                <img class="header__icon--image header__hidden" src="../media/Images/SVG/heart.svg" alt="heart">
+                            </a>
+                        </li>
+                        <li class="header__icon">
+                            <a class="header__icon--link" href="#">
+                                <img class="header__icon--image" src="../media/Images/SVG/cart.svg" alt="cart">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">New</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Designers</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Clothes</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Shoes</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Accessories</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Bags</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Jewlery</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Beauty</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Editorial</a>
+                    </li>
+                    <li class="header__menu--item">
+                        <a class="header__menu--link" href="#">Sale</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="cart">
+        <div class="container">
+            <div class="cart__wrapper">
+                <h1 class="cart__title">Shopping Bag</h1>
+            <div class="cart__row">
+                <div>
+                    <p class="cart__row--title">Product</p>
+                </div>
+                <div class="cart__row--secondDiv">
+                    <p class="cart__row--title">Price</p>
+                    <p class="cart__row--title">Quantity</p>
+                    <p class="cart__row--title">Total</p>
+                </div>
+            </div>
+            <hr class="cart__hr">
+    
+            <div class="card__product">
+                <div>
+                    <img class="cart__product--image" src="../media/Images/PNG/product1.jpg" alt="">
+                </div>
+                <div class="card__product--div">
+                    <div class="card__product--list">
+                        <div class="card__product--item1">
+                            <h3 class="cart__product--title">Gucci</h3>
+                            <p class="cart__product--size">Zipper Mini Dress</p>
+                            <p class="cart__product--purchase">White </p>
+                            <p class="cart__product--purchase">S </p>
+                        </div>
+                        <div class="card__product--item cart__product--item--price">
+                            <p class="cart__product--price">$879.00</p>
+                        </div>
+                        <div class="card__product--item">
+                            <div class="cart__product--buttons">
+                                <button class="cart__product--button cart__product--decrease">-</button>
+                                <span class="cart__product--number">1</span>
+                                <button class="cart__product--button cart__product--increase">+</button>
+                            </div>
+                        </div>
+                        <div class="card__product--item">
+                            <p class="cart__product--total">$879.00</p>
+                        </div>
+                    </div>
+                    <div class="cart__product--remove--div">
+                        <a href="#" class="cart__product--remove">Move to wishlist</a>
+                        <a href="#" class="cart__product--remove">Remove</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card__product">
+                <div>
+                    <img class="cart__product--image" src="../media/Images/PNG/product1.jpg" alt="">
+                </div>
+                <div class="card__product--div">
+                    <div class="card__product--list">
+                        <div class="card__product--item1">
+                            <h3 class="cart__product--title">Gucci</h3>
+                            <p class="cart__product--size">Mix Pattern Leather Jacket</p>
+                            <p class="cart__product--purchase">Black</p>
+                            <p class="cart__product--purchase">S</p>
+                        </div>
+                        <div class="card__product--item cart__product--item--price">
+                            <p class="cart__product--price">$450.00</p>
+                        </div>
+                        <div class="card__product--item">
+                            <div class="cart__product--buttons">
+                                <button class="cart__product--button cart__product--decrease">-</button>
+                                <span class="cart__product--number">1</span>
+                                <button class="cart__product--button cart__product--increase">+</button>
+                            </div>
+                        </div>
+                        <div class="card__product--item">
+                            <p class="cart__product--total">$900.00</p>
+                        </div>
+                    </div>
+                    <div class="cart__product--remove--div">
+                        <a href="#" class="cart__product--remove">Move to wishlist</a>
+                        <a href="#" class="cart__product--remove">Remove</a>
+                    </div>
+                </div>
+            </div>   
+            <div class="checkout">
+                <ul class="checkout__list">
+                    <li class="checkout__item">Subtotal</li>
+                    <li class="checkout__item">$1779.00</li>
+                </ul>
+                <p class="checkout__description">Tax and shipping calculates at checkout.</p>
+                <p class="checkout__description">Pay as low as $123/mo with <img src="../media/Images/SVG/affirm.svg" alt=""> <a class="checkout__cta" href="#">Learn More</a></p>
+                <a class="checkout__button" href="#">Checkout</a>
+            </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div>
+                    <h3 class="footer__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                </div>
+                <div>
+                    <p class="footer__heading">Sign up for toward updates</p>
+                    <p class="footer__description">Receiving our newsletter with access to our latest collections, events and news.</p>
+                    <div class="footer__input--wrapper">
+                        <input class="footer__input" type="text" placeholder="Email Address">
+                        <img class="footer__right--icon" src="../media/Images/SVG/white-toRight.svg" alt="toRight">
+                    </div>
+                    <ul class="footer__icons">
+                        <li class="footer__icon">
+                            <img src="../media/Images/SVG/instagram.svg" alt="">
+                        </li>
+                        <li class="footer__icon">
+                            <img src="../media/Images/SVG/facebook.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__third--div">
+                    <h4 class="footer__heading">customer care</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">FAQ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Shipping & Returns</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer__heading">company</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">About Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Journal</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">Press</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer__copyright">© 2021 Toward Brand</p>
+        </div>
+    </footer>
+</body>
+</html>
