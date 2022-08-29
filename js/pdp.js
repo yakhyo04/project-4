@@ -66,7 +66,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 var swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 10,
-  effect: "fade",
+  // effect: "fade",
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

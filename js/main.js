@@ -268,11 +268,14 @@ SetupPagination(list_items, pagination_element, rows);
 
 const filter = document.querySelector('.filter');
 const accordion = document.querySelector('.accordion__div');
+const filterImage = document.querySelector('.filter__image');
 
 filter.addEventListener('click', function(){
     if(accordion.style.display === 'none'){
         accordion.style.display = 'block';
+        filterImage.src = '../media/Images/SVG/minus.svg';
     }else{
+        filterImage.src = '../media/Images/SVG/plus.svg';
         accordion.style.display = 'none';
     }
 })
