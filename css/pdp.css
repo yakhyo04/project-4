@@ -259,7 +259,18 @@
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.menu__link-description {
+
+.menu__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 159.5%;
+  color: #000000;
+  opacity: 0.3;
+}
+.active {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -267,15 +278,8 @@
   line-height: 159.5%;
   border-bottom: 1px solid #000000;
   padding-bottom: 4px;
-}
-.menu__link {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 159.5%;
-  color: #000000;
-  opacity: 0.3;
+  cursor: pointer;
+  opacity: 1;
 }
 .product__desc-sustainable {
   border: 1px solid #f2f2f2;

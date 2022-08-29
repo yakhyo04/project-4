@@ -189,7 +189,7 @@
               <img src="../media/Images/SVG/bottom.svg" alt="" />
             </div>
             <a class="product__desc-guide text-size" href="">Size Guide</a>
-            <p class="product__desc-color">Color : White</p>
+            <p class="product__desc-color">Color : <span></span></p>
             <form class="products__form">
                 <p>
                     <input type="radio" id="radio1" name="radio" checked>
@@ -208,15 +208,23 @@
               <a href="">Add to bag</a>
             </div>
             <div class="product__desc-menu">
-              <div class="menu__link-description">Description</div>
-              <div class="menu__link">Detail</div>
-              <div class="menu__link">Shipping</div>
-              <div class="menu__link">Brand</div>
+              <div class="tablinks menu__link" onclick="openCity(event, 'Description')" id="defaultOpen">Description</div>
+              <div class="tablinks menu__link" onclick="openCity(event, 'Detail')">Detail</div>
+              <div class="tablinks menu__link" onclick="openCity(event, 'Shipping')">Shipping</div>
+              <div class="tablinks menu__link" onclick="openCity(event, 'Brand')">Brand</div>
             </div>
-            <p class="text-size">
+            <p id="Description" class="text-size tabcontent">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
+            <p id="Detail" class="text-size tabcontent">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ex hic aliquam?
+              </p>
+              <p id="Shipping" class="text-size tabcontent">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum consequatur molestiae dolor dolores!
+              </p>
+              <p id="Brand" class="text-size tabcontent">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit.
+              </p>
             <div class="product__desc-sustainable">
               <h3>Sustainability</h3>
               <div class="product__desc-monthly">
@@ -423,6 +431,24 @@
         </div>
     </footer>
 
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
     
 </body>
 </html>
